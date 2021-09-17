@@ -1,0 +1,4 @@
+com/ceodev18/mvvmexample/databinding/ActivityMainBinding.java
+ com.ceodev18.mvvmexample.databinding.ActivityMainBinding
+com/ceodev18/mvvmexample/BuildConfig.java
+ com.ceodev18.mvvmexample.BuildConfig
