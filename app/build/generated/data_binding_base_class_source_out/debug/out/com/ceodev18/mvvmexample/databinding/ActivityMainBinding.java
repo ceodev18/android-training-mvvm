@@ -4,6 +4,7 @@ package com.ceodev18.mvvmexample.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,6 +20,9 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ProgressBar progress;
+
+  @NonNull
   public final TextView tvAuthor;
 
   @NonNull
@@ -27,9 +31,11 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final ConstraintLayout viewContainer;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull TextView tvAuthor,
-      @NonNull TextView tvQuote, @NonNull ConstraintLayout viewContainer) {
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull ProgressBar progress,
+      @NonNull TextView tvAuthor, @NonNull TextView tvQuote,
+      @NonNull ConstraintLayout viewContainer) {
     this.rootView = rootView;
+    this.progress = progress;
     this.tvAuthor = tvAuthor;
     this.tvQuote = tvQuote;
     this.viewContainer = viewContainer;
@@ -62,6 +68,12 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.progress;
+      ProgressBar progress = rootView.findViewById(id);
+      if (progress == null) {
+        break missingId;
+      }
+
       id = R.id.tvAuthor;
       TextView tvAuthor = rootView.findViewById(id);
       if (tvAuthor == null) {
@@ -76,7 +88,8 @@ public final class ActivityMainBinding implements ViewBinding {
 
       ConstraintLayout viewContainer = (ConstraintLayout) rootView;
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, tvAuthor, tvQuote, viewContainer);
+      return new ActivityMainBinding((ConstraintLayout) rootView, progress, tvAuthor, tvQuote,
+          viewContainer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

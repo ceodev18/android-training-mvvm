@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Italo\\Documents\\Projects\\Kotlin\\MVVMExample\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
+            "outputFile": "C:\\Users\\christian.espinoza\\Documents\\Italo\\android\\android-training-mvvm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Italo\\.gradle\\caches\\transforms-2\\files-2.1\\2de5a6b17c59cfa51c3f364f5a8e2176\\material-1.4.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
+                    "source": "C:\\Users\\christian.espinoza\\.gradle\\caches\\transforms-2\\files-2.1\\2de5a6b17c59cfa51c3f364f5a8e2176\\material-1.4.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
